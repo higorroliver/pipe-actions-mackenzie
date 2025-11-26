@@ -39,4 +39,4 @@ jobs:
       - name: Testar arquivo HTML
         uses: wjdp/htmltest-action@v0.13.0-rc1
         with:
-          path: dist
+          path: site
