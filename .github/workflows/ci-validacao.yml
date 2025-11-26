@@ -32,10 +32,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Verificar a existência do arquivo HTML5 e demais configs
         id: check_files
-        fail: true
         uses: andstor/file-existence-action@v3
         with:
           files: "site/index.html, LICENSE, README.md"
+          fail: true
 
       - name: Testar arquivo HTML
         uses: wjdp/htmltest-action@v0.13.0-rc1
